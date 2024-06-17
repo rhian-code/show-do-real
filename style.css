@@ -36,47 +36,40 @@ header nav ul a{
     font-family: var(--font-p);
 }
 main{
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
-
-.ofertas h1{
-    font-family: "Montserrat", "poppins", monospace;
-    font-weight: 700;
+main h1{
+    font-family: var(--font-p);
+    font-size: 1.2rem;
+    align-self: left;
 }
 .ofertas{
+    margin-top: 10px;
+    max-width: 1200px;
+    width: 80%;
+    background-color: #eaeaea82;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 20px;
-    width: 800px;
-    width: 100%;
-    background-color: #dadada27;
-    padding: 20px; 
-    margin-top: 30px;
-    border-radius: 20px;
-}
-.carrosel{
-    display: flex;
+    gap: 10px;
     overflow-x: auto;
-    padding: 10px;
-    gap: 30px;
+    box-shadow: var(--boxshadow);
 }
 .card{
-    background-color: transparent;
-    border: 1px solid rgba(128, 128, 128, 0.352);
-    min-width: 250px;
+    width: 250px;
     height: 250px;
-    margin-right: 10px;
+    flex-shrink: 0;
+    padding: 10px;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.372);
+    
 }
-.back{
-    background-color: #c61717;
+.card picture img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;box-shadow: var(--boxshadow);
 }
 .grupos{
     display: flex;
@@ -221,10 +214,10 @@ footer{
     text-decoration: none;
 }
 @media (max-width: 1250px) { 
-    .card {
+    /* .card {
         width: 200px;
         height: 220px;
-    }
+    } */
     .avaliar{
         flex-direction: column;
     }
