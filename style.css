@@ -52,11 +52,19 @@ main h1{
     margin-top: 10px;
     max-width: 1200px;
     width: 80%;
-    background-color: #eaeaea82;
     display: flex;
     gap: 10px;
     overflow-x: auto;
-    box-shadow: var(--boxshadow);
+}
+.ofertas::-webkit-scrollbar{
+    height: 10px;
+}
+.ofertas::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: #FD1D1D;
+}
+html ::-webkit-scrollbar-track {
+    background: transparent;
 }
 .card{
     width: 250px;
@@ -222,9 +230,20 @@ footer{
         flex-direction: column;
     }
 }
+@media (max-width: 720px) {
+   header nav{
+    font-size: 12px;
+   }
+   .logo h1{
+    font-size: 16px;
+   }
+}
 @media (max-width: 570px){   
     header nav{
-        display: none;
+        font-size: 12px;
+    }
+    .logo{
+        font-size: 14px;
     }
     footer{
         flex-direction: column;
