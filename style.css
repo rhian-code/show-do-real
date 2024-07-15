@@ -61,7 +61,7 @@ main h1{
 }
 .ofertas::-webkit-scrollbar-thumb{
     border-radius: 50px;
-    background-color: #FD1D1D;
+    background-color: #8f8f8f8c;
 }
 html ::-webkit-scrollbar-track {
     background: transparent;
@@ -171,16 +171,60 @@ html ::-webkit-scrollbar-track {
 .flex-row{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
 }
-.avaliar picture img{
+/* .avaliar picture img{
     width: 100%;
     padding: 5px;
     box-shadow: var(--boxshadow);
     border-radius: 10px;
+} */
+.references{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: var(--font-p);
+    font-weight: 600;
+}
+.card_ref{
+    max-width: 320px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.337);
+    margin: 5px;
+}
+.head_ref{
+    display: flex;
+    font-family: var(--font-p);
+    font-weight: 700;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.head_ref .user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
 }
 
+.head_ref img{
+    width: 50px;
+}
+.head_ref .stars{
+    font-size: 0.8rem;
+}
+.text_ref{
+    font-size: 1rem;
+    text-align: center;
+}
 footer{
     min-height: 300px;
     display: flex;
@@ -226,8 +270,15 @@ footer{
         width: 200px;
         height: 220px;
     } */
-    .avaliar{
+
+}
+@media (max-width: 968px){
+    .references{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 15px;
     }
 }
 @media (max-width: 720px) {
@@ -241,6 +292,9 @@ footer{
 @media (max-width: 570px){   
     header nav{
         font-size: 12px;
+    }
+    header nav ul{
+        gap: 8px;
     }
     .logo{
         font-size: 14px;
